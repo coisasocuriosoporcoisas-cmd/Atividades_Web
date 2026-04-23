@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+         <head>
+	<title>Resumo capítulo 2</title>
+        </head>
+        <body>
+            <h1>1.0 Introdução ao html</h1>
+            <br>
+            <p> O html, támbem conhecido como linguagem de hype texto é a estrutura principal de uma página web, pois atráves dela esboçamos a estrutrura de nosso site.</p>
+            <br>
+            <h2>1.1  versões do Html</h2>
+            <br>
+            <p><b>HTML</b> a primeira versão foi publicada em 1992, baseando-se em propostas feita pelo seu criado Tim Berners-lee seu.</p>
+            <br>
+            <p><b>HTML 4.0</b> Nessa versão o css foi integrado contribuindo na criação de layoud e design mais sofisticados.</p>
+            <br>
+            <p><b>XHTML</b> Uma versão do html reformulada de acordo com as regras  Xml, mas devido a suas regras estritas foi descontinuada.</p>
+            <br>
+            <p><b>HTML5</b> A versão predominante desde de 2014, substituindo as versões anteriores, por uma versão apefeicoada da linguagem.</p>
+            <br>
+            <h1>1.2 usando o elementos.</h1>
+            <br>
+            <h3>Definindo a Estrutura via Elemento.</h3>
+            <br>
+           
+                <p><b>!DOCTYPE html</b>: Usamos essa Tag para Definimos o documento HTML</p>
+                <br>
+                <p><b>html</b>: Tudo que estive dentro desta Tag será intepretado como o documento!</p>
+                <br>
+                <p><b>head</b> Essa tag reserva infromações destinadas ao navegador., como é o caso do "Title" o título presente na página.</p>
+                <p><b>body</b>:O conteúdo dentro desta tag, será o que vai ser exibido no navegador.</p>
+                <br>
+                <p><b>h1,h2,h3,h4,h5,h6</b>: todas as Tags listadas representam o titulo principal e seus sub-titulos</p>
+                <br>
+                <p><b>p</b>: Nesta Tag, colocaremos os paragrafos destinados ao nosso arquivo, as tags que o acompanham, como i, br, sub, etc, rrepresentam a manipulação textual que podemos faze no documento.</p>
+                <br>
+                <h4>Parametrizando Elementos via Atributos</h4>
+                <p>Para passamos uma informação adicional a um elemento, usamos a Tag "a", acompanhada pelo atributo "href="" " passando o link entre aspas.<b>atenção</b> o href, deve fica dentro da tag de abertura "a", equanto o elemento exibido,deve fica no meio entre a tag de abertura e a tag de fechamento(/)</p>
+                <br>
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">click aqui</a>
+                <br><p>click no link acima, ele será direcionado há um site.</p>
+                <br>
+                <h4>Salvando um arquivo Html</h4>
+                <p>Com o código pronto chegou a hora de executa-lo, mas como devo fazer isso?
+                   <br>
+                   caso você, esteja usando um editor de texto padrão de seu navegador, localize ele em seu dispósitivo e troque o nome logo após a virgúla pela extensão "html", após isso dê dos cliques e ele abrirá np navergador.
+                </p>
+                <h1>1.3 Ultilizando os principais elementos</h1>
+                <p>Usar HTML é fácil, o que precisamos nada mais é do que saber quais elemntos usar e como ultilizar seus atributos caso tenha.
+                   <br>
+                   <p>Quando usamos elementos do tipo texto, termos uma finitas formas de manipulalos, entre as tags principais, estão:</p>
+                   <br>
+                   <ul>
+                    <li><b>i</b>-deixa o texto selecionado em itálico.</li>
+                    <li><b>em</b>-similar ao da tag i, com o diferencial de trazer mais enfâse o texto selecionado.</li>
+                    <li><b>b</b>-deixa o texto em negrito.</li>
+                    <li><b>strong</b>-similar ao do b, com o diferencial em trazer enfâse a frase.</li>
+                    <li><b>q</b>-tag para citações curtas.</li>
+                    <li><b>blockquote-</b>citações longas.</li>
+                    <li><b>abbr</b>-Abreviações</li>
+                    <li><b>dfn</b>-marcação de definições de termos.</li>
+                    <li>etc...</li>
+                </ul>
+                </p>
+                <h1>1.4 Listas em html</h1>
+                <p>Em html, rxistem três formas de criar uma listas, cada uma com sua devida perculariedade. </p>
+                <h2>listas ordenadas</h2>
+                <img src="img/lista_not.png" alt="lista ordenada" title="imagem 1.0">
+                <br>
+                <p>Em listas ordenas, Nesta tag, usamos o elemento "OL" para listamos os intens(li) da lista em ordem númerica.</p>
+                <br>
+                <h5>Exemplo de lista ordenada.</h5>
+                <img src="img/ex1.png" alt="a imagem ilustra o resultado da imagem 1.0">
+                <h2>Listas não ordenadas.</h2>
+                <p>Similares as listas ordenas, com o diferencial de não apresenta uma numeração, no lugar, existe um ponto antercendendo o intem da lista (li)</p>
+                <br>
+                <img src="img/lista_nl.png">
+                <h5>Exemplo de lista não ordenada.</h5>
+
+                <img src="img/ex2.png">
+                <h2>Lista de descrição.</h2>
+                <p>Ao contrário das demais listas, que usam o elemento li, a estrutura de uma lista de descrição, usar 3 elementos cruciais, entre eles, estão:</p>
+                <img src="img/estrut.png">
+                <dl>
+                    <dt>
+                        DL
+                    </dt>
+                    <dd>Define a estrutura, o cotainer que contem os elementos.</dd>
+                    <dt>Dt</dt>
+                    <dd>Destacar o elemento que será definido.</dd>
+                    <dt>Dt</dt>
+                    <dd>inserir a definição do elemento.</dd>
+                </dl>
+                <h3>Bonûs-Lista aninhada.</h3>
+                <p>Seguindo a estrutura presente nas listas ordenadas e não ordenadas, as listas animhadas tem como diererncial a criação de duas lisats interligadas dentro do container.</p>
+                <img src="img/ani.png">
+                <h5>Exemplo de lista aninhada</h5>
+                <img src="img/ex 4.png">
+
+                <h1>1.5 Definindo links.</h1>
+                <p>Em um site existe várias web páginas dentro ou fora do site, basicamente você pode destiguir em vários links, entre eles, termos: </p>
+                 <dl>
+                    <dt>
+                        <b>Links externos:</b>                       
+                    </dt>
+                    <dd>Nele, você expecifica o URL da página no atributo href, além disso, você pode controlar como esse link irá ser acessado, se será na mesma guia da vinculação do link ou em uma nova janela, atáves da página target com o auxilio do elemnto _blank.</dd>
+                        <img src="img/links.png">
+                        <h5>Exemplo de links externos</h5>
+                        <img src="img/ex7.png">
+                    <dt>Links relativos</dt>
+                    <dd>Nele você informa o Url da página ou do site, sem a necessidade de especificar o nome do dominio, assim o navegador saber que página está no mesmo dóminio (mesmo local), em resumo são arquivos localizados internamente.</dd>
+                    <img src="img/link2.png">
+                    <h5>Exemplo</h5>
+                    <img src="img/ex6.png">
+                    <dt>Links internos</dt>
+                    <dd>Estes link servem como arcorâs para ao elemento fragmentados presente  na mesma página, para que seja realizado , o local (a âncora) deve primeiro ser
+                       marcado com um ID usando o atributo id. Depois, você pode usar o ID precedido de #</dd>
+                       <img src="img/links5.png">
+                       <h5>Exemplo de links internos</h5>
+                       <img src="img/ex.png">
+                </dl>
+                <h1>1.6 Incluindo imagens</h1>
+                <p>Em html, você pode adicionar uma imagem atráves da Tag "img", "img" é similar ao elemento "br" em sua natureza, pois ambos são elementos vazios, já que não contém texto ou outros dados em sí, para isso o "img" necessita de um atributo conhecido como src, onde você especificar a URL onde a imagem está ou o caminho dentro de seu disposítivo. </p>
+                <p>Na tag "img" você ainda têm o atributo "alt" elemento reponsável pela adicição de texto as imagem, servindo em primeiro momento como uma descrição, mas podendo abrangir mais do que seu uso inicial. Cabe destacar que essa tag fica invisível na tela caso a imagem seja carreda com sucesso, caso contário, alt será exibida.</p>
+                <p>Title, na tag "img", você têm a opção de adicionar um titúlo a sua imagem, entretanto, esse titúlo só ficará visivel caso o usuário passe o curso do mouse encima da imagem.</p>
+
+                <h2>Estrutura da tag imagem.</h2>
+
+                <img src="img/img.png" alt="estrutura básica de uma tag img" title="estrutura básica da tag img">
+                <h5>Exemplo da Tag imagem.</h5>
+                <img src="img/cat.png" alt="gato-amarelo" title="gato amarelo">
+                <p>a imagem acima mostra como ficou a imagem inserida na tag imagem.<br>Caso retirasimos a imagem, alt, ficaria visível no navegado.</p>
+                <img src="img/alt.png">
+                <p>Por fim, para termos a vizualização do atributo "title" precisaremos posiciona o curso do mouse encima da imagem correspodente</p>
+                <img src="img/title.png">
+                <h3>Adicionando legendas a imagem</h3>
+                <p>Como já virmos anteriomente a tag imagem, apresenta alguns atributos ocultos que ajudam a compôr a imagem, porém, a duas tag especificas que auxiliam em um novo comportamento a tag e são elas:</p>
+                <dl>
+                    <dt><b>Figure</b></dt>
+                    <dd>Tag pai, a que conecta a tag "img" a tag respósavel pela legenda (figcaption)</dd>
+                    <dt>Figcaption</dt>
+                    <dd>Tag respósavel por introduzir uma legenda a imagem envolvida pela tag pai figure.</dd>
+                </dl>
+                <h5>Estrutura das tag: figure e figcaption.</h5>
+                <figure>
+                    <img src="img/figure.png" alt="estrutura" title="estrutura-figure">
+                    <br>
+                    <figcaption>
+                       A imagem mostra acima a estrutura base da tag figure, img e figcaption.
+                    </figcaption>
+                    <br>
+                     <img src="img/gato_deit.png">
+                     <br>
+                     <figcaption>
+                        A imagem demostra o resultado do código fonecido na figura anterior.
+                     </figcaption>
+                        
+                </figure>
+                <h1>Estruturando tabelas.</h1>
+                <p>Tabelas são elementos ideais para estrutura dados correntes, sejam eles produtos de uma loja ou resultados de uma partida de futebol, os dados organizados em grandes colunas e lihas, um pequeno elemnto desse conjunto de fatores e chamado de célula.</p>
+                <p>Em html uma tabela é construida pelo elemento "table", seguido termos o cabeçalho que é criado pelo elemento "th",para novas linhas você adiciona a tag "tr", células são enviadas via "td" (os dados)</p>
+                <h2>Estrutura da tabela</h2>
+                <figure>
+                    <img src="img/tabela.png">
+                    <br>
+                    <figcaption>
+                        A imagem acima representa a estrutura base de uma tabela em html.
+                    </figcaption>
+                    <br>
+                    <img src="img/result_tabela.png">
+                    <br>
+                    <figcaption>
+                        Acima o resultado do código anterior
+                    </figcaption>
+                </figure>
+                <p>
+                    Em tabelas longas para ter uma precisão maior sobre os elementos que estão sobre o dóminio da tabela, o ideal seria usar elementos que marquem as estruturas que serão estilizadas futuramente, entre eles podermos citar:
+                </p>
+                <dl>
+                    <dt>Thead</dt>
+                    <dd>elemento resposável por marca o cabeçalho da tabela.</dd>
+                    <dt>Tbody</dt>
+                    <dd>Elemento resposável por marca o corpo da tabela.</dd>
+                    <dt>Tfoot</dt>
+                    <dd>elemento que marca o rodapé da tabela</dd>
+                    <p>Com a adição destes elementos se torna fácil a manipulação posteriomente em css de cada linha da tabela </p>
+                </dl>
+                <h5>Estrutura base de tabelas com o a marcação thead,tbody e tfoot.</h5>
+                <figure>
+                    <img src="img/tabela_color.png">
+                    <br?>
+                    <figcaption>
+                        Acima termos um código combinado com Css que evidência o uso das tags de marcação junto com a estilização em css.
+                    </figcaption>
+                    <br>
+                    <img src="img/tabela_css.png">
+                    <figcaption>
+                        Acima o resultado do código fornecido anteriomente.
+                    </figcaption>
+
+                </figure>
+                <h1>1.7 Definindo um formulário.</h1>
+                <p>Formulários são intens comuns na internet e as pessoas os usam recorrentemente, por exemplo toda vez que você preenche a barra de pesquisa de seu navegado você está enviando uma mensagem ao servidor correspodente a aquele mecanismo, com base nisso o servidor gera uma resposta a você posteriomente.</p>
+                <p>Em html existem vários meio de se criar um campo de formulário abragindo desde um simples sistema de login a um sitema de maior complexidade.</p>
+                <h2>Elementos primodias de uma estrutura de formulário.</h2>
+                <dl>
+                    <dt>Form</dt>
+                    <dd>Definir o formulário, em "form" possuímos o atributo "fieldse" que serve para agrupoa intens idividuamente.</dd>
+                    <dt>Input</dt>
+                    <dd>O elemento "imput" sinalizar o campo destinado ao envio de uma informação, o atributo "type" indica qual o tipo de dado que será informado, podendo varia desde de texto a senha.</dd>
+                    <dt>Select</dt>
+                    <dd>Definir elementos individuais em um campo, atráves do elemento "option" que auxiliar na organização da escolha iserida.</dd>
+                    <dt>Textarea</dt>
+                    <dd>Definir areas de texto, onde o usuário iserir em um campo maior do que o presente em "input"</dd>
+                    <dt>
+                        Label
+                    </dt>
+                    <dd>Elemento pai que comporta ou não elementos dentro de um formulário, atráves dos atributos for é possivel adiciona o "id" do input ou campo ao qual quero iserir neste container "label" sem a necessidade de está dentro dele.</dd>
+                </dl>
+                <h5>Abaixo a represetação de uma estrutura simples em html de uma página de formulário.</h5>
+                <figure>
+                    <img src="img/formulario.png">
+                    <br>
+                    <figcaption>Acima é demostrado a sintáxe básica de um formulário usando html.</figcaption>
+                    <br>
+                    <img src="img/form_result.png">
+                    <br>
+                    <figcaption>
+                        Acima o resultado do código presente na imagem acima.
+                    </figcaption>
+                </figure>
+                <p> Em "form" ainda é possivel usar o atributo "method" para especificar ao navergador qual método htpp deseja realiza neste formulário.</p>
+                <h1>Informações Adicionais.</h1>
+                <p>Como vistos anteriomente, existem elementos "pais" que agrupam elementos filhos em seu interior, essas tag muitas vezes possui apenas a função de agrupa elementos, mas no cápitulo, foram citadas apenas algumas, porém existem outras, uma em especifica acabou sendo deixado de fora a tag "div" geralmente é usada para dividir elementos na tela.</p> 
+                <p>Já parte de linhas, virmos támbem algumas como é o caso da tag "il" e dd, mas assim como "div" deixamos de mecionar a tag "span", resposável por introduzir lenhas na no documento html. </p>
+                <p>Embora a primeira vista apenas tenhamos usado a tag "img" há varias outras multimídias, que serão explicadas posteriomente</p>
+                <p>Por mais que a linguagem html, seja considerada uma linguagem de marcação textual, ela possuí comentários assim como as demais, o comentário é feito atráves de uma tag de auto fechamento que se inicia com "<" seguido por "!--comentário no centro--" presedido por uma ">"</p>
+                <p>Na parte de "head" virmos poucas coisas em relação ao conteúdo dessa parte do html, nela ainda exite "meta-tags" que auxiliam o navegador, além disso é possível introduzir por meio de  tags "linkes" que importam arquivos javascript e css ao documento html principal.</p>
+            </body>
+</html>
