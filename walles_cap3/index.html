@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Resumo cap 3</title>
+		<link  href="css/base.css" type="text/css" rel="stylesheet">
+	</head>
+	<body>	
+		<h1 >Resumo cápitulo 3</h1>
+		<h2>1.0 O básico de CSS</h2>
+		<p>Em css selecionamos os elementos do html especificos que queremos customizar, o css consist em uma declaração de propriedade css, por exemplo, para trazemos cores para a "borda" de nossos elementos usamos o seletor "body".</p>
+	<p >Abaixo um exemplo mostrando a sintáxe desse seletor em um arquivo CSS</p>
+	
+	<img src="img/exemplo1.png" alt="exemplo 1">
+	
+	<h2> 1.1 CSS sendo incluido em htm</h2>
+	<p>Em geral, Css possue certas regras para a sua inclusão no arquivo html, entre elas:</p>
+	<dl>
+		<dt>
+			Externo
+		</dt>
+			<dd>Neste caso o as intruções css são guadadas em uma arquivo de texto, com a extensão <b>css</b> separada com os devidos seletos organizados, para interagir com o arquivo principal o arquivo css e adiconado atraves da tag <b>link</b>, logo no inicio do arquivoi principal.</dd>
+		<dt>
+			Internos
+		</dt>
+		<dd>Já dessa vez conteudo css e adicionado apartir de uma tag conhecida <b>Style, </b>que terá todos os comandos emitidos a cada taga selecionada.</dd>
+
+	</dl>
+	<p>Uma estrátegia bem usada e usar varios arquivos css para darem a atmofera visual a cada parte do arquivo principal, outro ponto e o reuso de alguns elemento presentes no <b>css base</b>, esse mesmo evento pode ser aplicado em um único arquivo css, servindo como base para múltiplos arquivos, vale destaca que mesmo o css possuindo uma tag  chamada style, onde os atributos css são posicionados difernete de um arquivo solo, não pode ser rutilizado por terceiros.comforme mostrado na imagem abaixo.</p>
+	<img src="img/EXEMPLO2.png" alt="exemplo2">
+	<p>Na parte do <b>link</b> o atributo <b>rel</b> especifica ao navegado se ele deve usar aquele arquivo como layoud principal, ou se deve espera alguma reação externar para ele ser ativado. </p>
+	<h3>Import em arquivos css</h3>
+	<p>Em css, você pode optar por importa outros arquivos css, em um único arquivo, desde que ele possuar a sintáxe correta.</p>
+	<img src="img/ex3.png" alt="ex import css" >
+	<h2>1.2Seletores em Css</h2> 
+	<p>Para derfinimos elementos css, usamos certos seletores especificos dentro do arquivo style, seja antes ou depois da determinada TAG que queremos altera a aparência dessebdeterminado elemento. </p>
+<p>Abaixo alguns exemplos de como seleciona tags especificas, para manipulamos a aparência das tags dentro de nosso arquivo(s) css(s) </p>
+
+	<dl>
+		<dt>TAGS comuns</dt>
+		<dd>Em TAG tradicionais, usamos o nome do elemnto ao qual vamos manipular de nosso arquivo html, a sintáxe, básica segue o:<b>NOME ELEMENTO seguido pelos cochetes {
+onde o contéudo do css ficará.}</b></dd>
+	<img src="img/ex1_sel.png" alt="selecao tardicional">
+	<p id="peq">conforme inlustrado na imagem acima.</p>
+
+	<dt class="dt_cl">TAGS com classes</dt>
+	<dd class="sel_dd">Neste caso, selecionamos o nome da classe correspodente atráves de um ponto antes do nome pertencente a ela.a sintaxe segue: <b class="b_md">.NOME CLASSE { contéudo css;}</b><br> Se você repara, o mesmo está ocorrendo neste parágrafo, note a distorção da fonte presente aqui comparado com a demais ou a cor do termo grifado, como é diferente.<br> O exemplo abaixo inlustra bem, como acontece.</b></dd>
+	<img src="img/ex2_sel.png" alt="TAGS em classe" >
+	<p id="peq"> o exemplo acima inlustra como ocorre a atribuição na classe.</p>
+
+	<dt id="dt_sel">TAGS com id</dt>
+	<dd id="dd_sel">Diferente dos demais, usamos<b id="b_sel"> #</b> para especificamos qual o elemento que eu pretendo seleciona, similar aos anterior<b id="b_sel">(classe) # </b> vem antes, para que depois o id correspodente seja adicionado as determinadas espécificações.<br> Assim como anterior destiguimos os parágrafos, negrito e o título, para deixamos evidênte cada contéudo.</dd>
+
+<img src="img/ex3_sel.png" alt="TAGS com id" >
+<p id="peq"> no exemplo acima é mostrado a sintáxe usada</p>
+
+<dt>TAGs universais</dt>
+<dd>Antes de tudo, essa é a TAG que se distigue das demais ao contrário, das demias que usam alguma marcação antes do nome da tag, nessa usa-se apenas, a marcação, no caso o <b>*</b> asterico, mas cuidado,nesta tag, qualquer delize, pode influência todos os elementos de sua pagína. </dd>
+	
+	<img src="img/ex4_sel.png" alt="elemeto universal">
+	<p id="peq">exemplo acima inlustra a declaração de um elemento universal></p>
+<dt>Seleção de Atributos</dt>
+<dd>Para selecionamos um atributo, o colocamos dentro de cochete <b>[]</b> contendo o nome desse atributo caso não seja adicionado uma especificação anterior, informando a tag, classe ou id pertencente, aquele argumento introduzido ao atributo será valido a todos os mesmo, abaixo um exemplo interativo.</dd>
+
+	
+ <center><a href="https://burymewithmymoney.com/">texto</a></center>
+
+ <img src="img/sel_atrib.png" alt="atributo selecionado">
+ <p id="peq">imagem retirada do site <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Reference/Selectors/Attribute_selectors">https://developer.mozilla.org/pt-BR/docs/Web/CSS/Reference/Selectors/Attribute_selectors</a></p>
+
+<dt>Atributo adjecente </dt>
+<dd>Seleceiona itens que se encontra proximo da tag, com isso o mesmo background da tag anterior tambem será o mesmo da tag subsequente.</dd>
+<img src="img/sel_adj.png" alt="seleceção adjecente">
+<dt>Elementos sigulares</dt>
+<dd>General sigleion elementos: Neste caso os elementos não são selecionados urgentemente, ele seguem uma sintaxe bem rebuscada, contendo</dd>
+<img src="img/sel_sig.png" alt="selgula sig">
+<dt>Escudo</dt>
+<dd>
+	 Seleciona itens de uma parte da TAG principal body. 
+</dd>
+<img src="img/child.png">
+<dt> Seletores Decentes</dt>
+<dd>seletores que herdam características específicas de outros partes do documento.</dd>
+<img src="img/deced.png">
+
+
+
+
+
+</dl>
+<h2>AS especificações cascatas.</h2>
+<p>Essas especificações são necessárias, pois o css se da de modo cascata ou seja, se dwfimos algo em uma TAG ela será atribuída a todas as outras tags que criamos , por isso existe essas especificações sobre a seleção de TAG em css, disso facilmente informarmos o que queremos mudar em nosso arquivo. </p>
+<p>no exemplo abaixo definimos de maneira explícita o do porque a essas seleções de tags são tão importantes. 
+note que na primeira imagem, selecionamos o mesmo elementos de maneira similar, entretanto no arquivo index. html, eles possuem características distintivas, enquanto um serve como arquivo de cabeçalho ou outro servir como título de capítulo, gerando, bem um confusão em distinguir quem é quem. para mudar isso , podemos usar uma classe ou até um os na TAG capítulo e atribuir a ela a cor diferente da TAG H1 titular, conseguindo assim distinguir ela das demais. </p>
+
+<h2>Interação</h2>
+<p>Em css, existe vários atributos que interagem entre sim de maneira bem dinâmica, um exemplo comum e o atributo font-size, que interagem diretamente com o atributo color, ambos servem para manipular o texto, onde font-size aplicamos em dia forma primitiva o tamanho da fonte enquanto em color definimos a cor que queremos àquele texto.</p>
+<h2>Aplicando Background-color em elementos:</h2>
+<p>Background-color, serve para dar cor a sua página web servindo como o fundo dela, existe várias formas de definimos essa coloração, entre elas estão:
+nome da cor, onde aqui especificamos qual. cor daremos ao nosso body ou div especifica.
+</p>
+<h3>Os diferetentes tipos de declarações</h3>
+<dl>
+	<dt>RGB</dt>
+	<dd>Uma combinação de cores que variam do número 0 ao 255, ambas as cores são selecionadas por números, sua sintaxe no seu arquivo css, segue:</dd>
+	<img src="img/Captura de tela 2026-05-18 044053.png" alt="rgb sintaxe">
+	<dt>Hexadecimal</dt>
+	<dd>Em hexadecimal, selecionamos as cores por uma série de 8 dígitos que podem incluir números ou letras da ordem hexadecimal.</dd>
+	<dt>
+		Nome da cor
+	</dt>
+	<dd>Se você acha complicado escrever varios númerois estranos ou digitos que não parecem fazer o menor sentido, o mais preferivel então e escrever o nome em Inglês do elemento(cor)</dd>
+	
+</dl>
+<h2>Design de Textos</h2>
+<p>Em css podermos definir fontes por meio do elemento font-family, essas fontes varias conforme a necessidade ou escolha do programador.</p>
+<h3>Definindo as Fontes </h3>
+<p>Para que sua fonte seja adicionada basta escrever seu nome após o elemento font-family, onde ele será atribuido ao texto, entre as mais usadas destaca-se as :</p>
+<ul>
+	<li><b>Serif:</b> fonte estilizada com pequenos ganchos nas letras</li>
+	<li><b>Sans-Serif:</b> fonte ótima para vizualiação pois são faceis de serem litas em qualquer tela.</li>
+	<li><b>fonte cursiva:</b> Fonte que simular a letra tardiconal que escrevmos</li>
+
+</ul>
+<h2>Ajustando o tamanho da fonte:</h2>
+<p>Em há um elemento em css que sirva para manipular o tamanho do texto, conhecido como font-size, você pode especificar o tamanho por meio de px, ao fim do numero, assim como informa uma pocentagem do preeenchimento assim como Em especificando a largura.</p>
+<img src="img/Captura de tela 2026-05-18 050300.png">
+<p>Há tambem outras formas de manipular o texto, por exemplo alterando a sua cor, dando assim uma aparencia mais agradavel, além disso é possivel criar algumas bricadeiras divertidas usando :, eles podem ser usados para mascara um resultado, por exemplo se uma pessoa acesso o link do site ele permite essa alteração de cor dando mais vida a págian.</p>
+<img src="img/Captura de tela 2026-05-18 050802.png">
+<br>
+<p>Teste o código abaixo.</p>
+<a href="https://www.dio.me/articles/seletores-de-atributo-no-css-o-guia-simples-e-direto-49f2b02ad5ec">link</a>
+<h2>1.3Lista e tabelas</h2>
+<p>Os componetes de listas podem ser customizados no css usando o agumentos especificos, contidos na sua estrutura.</p>
+<p>Para cria uma lista, você precisa especifica os stributos necessario delas, além de dizer o que dever mudar<br>a lista abaizo foi totalmente feita usando o ensinado neste tópico.</p>
+
+<ul id="teste_lista">
+	<li>Css</li>
+	<li>html</li>
+	<li>javascript</li>
+</ul>
+<p>Além do modelo usado neste exemplo existe inúmeras outras maneiras de usar esse esse metodos, seja na construção de tabelas para empressas ou na organização pessoal.</p>
+<p>Abaixo um exemplo de tabela feita apartir de listas não ordenada.</p>
+<img src="img/ui.png">
+<br>
+<img src="img/oipo.png">
+<br>
+<img src="img/Captura de tela 2026-05-18 045240.png">
+<h2>O basico no posicionamento com Css</h2>
+<p>o HTML e o CSS gerenciam a disposição dos elementos na tela, dividindo-se em três pilares principais: o tipo de elemento, o modo de posicionamento e o sistema de layout (com foco no Float).</p>
+<h3>Elementos em Nível de Bloco vs. Nível de Linha</h3>
+<p>A estrutura padrão do HTML divide os elementos em duas categorias de fluxo de texto:</p>
+<ul>
+	<li><b>Elementos em blocos:</b> sempre começam em uma nova linha e são organizados verticaente.</li>
+	<li><b>elemento em linhas:</b>Fluem junto com o texto mas são dispostos</li>
+</ul>
+<h3>Tipos de posicionamentos</h3>
+<dl>
+	<dt>Static</dt>
+	<dd>É se trata do padão ele e seguro sem movimento</dd>
+	<dt>Relative</dt>
+	<dd>ele é movido para todas as posições dentro da tela</dd>
+	<dt>Absolute</dt>
+	<dd>Basea-se no movimento e argumento do container pai.</dd>
+	<dt>fixed</dt>
+	<dd>o elemento e fixo em relação a janela do navegador</dd>
+	<dt>sticky</dt>
+	<dd>ele espera atingir uma data posição para se torna fixo.</dd>
+	<dt>Inherit</dt>
+	<dd>herda todas as caracteristicas do elemennto pai.</dd>
+</dl>
+
+<h3>Layoud felxivel com float</h3>
+<p>Neste tipo de layoud usamos elementos float, para alinhamos perfeitamnete os elementos fisicos em nossa tela.</p>
+<p><b>Funcionalidades:</b><br>A propriedade <b>float:left ou float right</b>, empurram os elemntos patrras as direções esquerda ou direirta, ao aplicamos em um formuklario alguns elemntos ficam desalihado para isso então usamos esses elementos, o truque tambem é usar o elemento<b> overflow</b>, que obriga o container a abrigar os elemntos flunates em sua estrutura.</p>
+<p>Conforme mostrado no exemplo a seguir:</p>
+<img src="img/formhtml.png">
+<br>
+<img src="img/form.png">
+<br>
+<img src="img/layd.png">
+<p id="peq">a imagem acima mostra o resultando do código fornecido pela ia gemini do google.</p>
+<h2>Layout Flexível</h2>
+<p>Layouts fexíveis foram introduzidos pela primeria vez no css3 , com isso, se tronou possivel criar elementos dinâmicos e ajusta a largura e o tamnho dos elementos dentro do esbaço acolhido.<br>Em css, o display da tela e idividual entre os intens incluindo o alinhamento, no exemplo abaixo tentaremos inlustra de maneira clara.</p>
+<img src="img/flex.png">
+<p id="peq">a imagem acima inlustra a forma como o layout flexivel atual perante a sua tela principal.</p>
+<table>
+	<thead>
+		<tr>
+			<th>Propriedade</th>
+			<th>Refere-se a...</th>
+			<th>Definição</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Tela</td>
+			<td>conteiner felxivel</td>
+			<td>trata-se de um container que pode ser manipulado de lugares distintos dentro da tala.</td>
+	   </tr>
+	   <tr>
+			<td>direção feleixel</td>
+			<td>container flexivel</td>
+			<td>especificar a direção que os intens serão alinhas dentro do container</td>
+	   </tr>
+	   <tr>
+			<td>container wrap</td>
+			<td>container flexivel</td>
+			<td>controlar o container sigular multilina dentro da coluna</td>
+
+		</tr>
+		<tr>
+			<td>
+				container justificados
+			</td>
+			<td>
+				container felexivel
+			</td>
+			<td>define quese os espaço esta pronto para distribir os intes em seu espaço.</td>
+		</tr>
+		<tr>
+			<td>align-intens</td>
+			<td>container flexivel</td>
+			<td>Orientar onde todos os elemntos devem ser flexinados na tela</td>
+		</tr>
+		<tr>
+			<td>Flexão basicas</td>
+			<td>intem flexivel</td>
+			<td>controla os valores de acordo com a ordem numerica</td>
+		</tr>
+		<tr>
+			<td>flex</td>
+			<td>intem flexivel</td>
+			<td>Projeta pré visalução ao proprietario no caso programador.</td>
+		</tr>
+	   </tbody>
+</table>
+<p>Para exemplicamos melhor colocaremos um exemplo abaixo que mostra de maneira explicita essa formação de um layout flexivel.</p>
+<img src="img/felx_lg.png" src="img/fgh.png">
+<br>
+<img  src="img/fgh.png">
+<br>
+<img src="img/Captura de tela 2026-05-19 085837.png">
+<img src="img/Captura de tela 2026-05-19 085853.png">
+<p>o exemplo acima mostra como contruimos um layout flecivek e funcional de um sitema de casdatração, note que varios elemento poarecem está alinhados de maneira ordenada simbolizando do amior ao menor</p>
+<h3>Layout Grid</h3>
+<p>Em grid podemos flexionar os elemntos em duias posições simutaneamente, o que tente a ser mais dinâmico em termos de usabilidade</p>
+<p>as principais propriedades incluem:</p>
+<ul>
+	<li><b>Display-grid</b><br>Trasforma o elemntos pai em um grid</li>
+	<li><b>grid tamplate</b><br>Direção do grid<br>Onde ele criar 2 colunas onde uma e maior que a fração da primeira</li>
+	<li><b>Row-gap</b><br>Espacamento<br>ele definir o espaço entre as colunas sem precirsar de margens</li>
+	<li><b>Grid-colums</b><br>Posicionamento<br>controla exatmente onde o elemento começa e termina</li>
+	<li><b>Justiify-ntes, align-intesn e align-content</b><br>Alinhamento<br>Servem para alinha e destribuir s intesn dentro do container</li>
+</ul>
+<p>Um exemplo prático é o alinhamento de intesn quando falamos de um formulario, o que pode ser benefico já que com isso não a necessiade da criação de varias div apenas para manipula os intns dentro da div prinmcipal.</p>
+<p>conforme mostrado abaixo:</p>
+<img src="img/htyl.png">
+<img src="img/gridsl.png">
+<img src="img/resut.png">
+<p id="peq">Conforme inlustrado no exemplo acima.</p>
+
+</body>
+
+
+</html>
